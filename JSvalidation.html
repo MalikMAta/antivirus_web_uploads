@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    
+    
+    <head>
+    
+        <script>
+        
+     
+      
+// The username can contain English letters (capitalized or not), digits, and the charaters '_' (underscore) and '-' (dash). Nothing else. Also, it cannot be empty or just "empty spaces".
+
+
+function validateUsername(field){
+
+    if (field == "") return "No username was entered.\n"
+
+        else if (field.length<5)
+            return "Username must be at least 5 characters long.\n"
+        else if(/[^a-zA-Z0-9_-]/.test(field))
+            return "Only a-z , A-Z, 0-9, - and _ allowed in Username.\n"
+        return ""
+
+
+}
+
+// The email must be well formatted, not allowing multiple '@', for example.
+
+
+function validateEmail(field)
+{
+
+        if (field == "") 
+    return "No Email was entered.\n"
+        else if (!((field.indexOf(".") > 0) && 
+        
+(field.indexOf("@") > 0)) || /[^a-zA-Z0-
+        9.@_-]/.test(field))
+
+        return "The Email address is invalid.\n"
+    return ""
+
+}
+
+
+
+// The password can have limitations of your choice, like minimal length or the use of special characters, but, if longer than 12 characters, it should not enforce any limitation.
+
+
+
+function validatePassword(field){
+
+    if (field == "") return "No Password was entered.\n"
+    
+        else if (field.length<12)
+            return "Username must be at least 6 characters long.\n"
+    
+                else if
+(!/[a-z].test(field) || !/[A-Z]/.test(field)) || !/[0-9]/.test(field)
+
+            return "Password require on each of a-z , A_Z and 0-9.\n"
+        return ""
+
+    else if (field > 12)
+        return "Password Success";
+
+}
+  
+        
+        
+        </script>
+    
+    
+        
+        
+        
+    </head>
+
+
+
+
+
+
+
+<body>
+    
+    
+   
+
+
+<form method = "post" action = "validation.php" onsubmit="return validate(this)">
+
+Enter you username: 
+<input type="text" name="username" maxlength ="32">
+
+Enter you email: 
+<input type="text" name="username" maxlength ="32">
+
+Enter you password: 
+<input type="text" name="username" maxlength ="32">
+
+
+<input type="submit" name="submit">
+
+
+</form>
+
+
+ </body>
+
+
+
+</html>
+

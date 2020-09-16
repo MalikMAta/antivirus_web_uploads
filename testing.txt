@@ -1,0 +1,70 @@
+
+/*
+
+
+$fileName  = "entry.txt";
+$str = file_get_contents($fileName);
+
+$r = mysqli_query($conn, $str);
+
+
+
+echo "$str";
+
+
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+
+if(! $r )
+{
+  die("Could not create the tables<br>");
+}
+echo "Table created successfully<br>";
+
+
+
+
+
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+
+
+
+
+$r = $conn->query($line);
+
+if(! $r )
+{
+  die("Could not create the tables<br>");
+}
+echo "Table created successfully<br>";
+
+
+
+*/
+
+
+
+
+
+/*
+$fh = file_get_contents($file);
+*/
+
+
+/*
+$r = mysqli_query($conn, $fh);
+
+if ($conn->query($fh) === TRUE) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . $conn->error;
+}
+*/
+
